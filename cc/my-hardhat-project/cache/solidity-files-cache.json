@@ -1,0 +1,110 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/shaikmohammadshaid/Downloads/my-hardhat-project/contracts/Defi.sol": {
+      "lastModificationDate": 1724709899233,
+      "contentHash": "afb9398a55eff0d711ccaa13a927970f",
+      "sourceName": "contracts/Defi.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Defi"
+      ]
+    },
+    "/Users/shaikmohammadshaid/Downloads/my-hardhat-project/contracts/NFTandDefiMerged.sol": {
+      "lastModificationDate": 1724709899233,
+      "contentHash": "c699503b717b7acfc1dc3798e4f8fd61",
+      "sourceName": "contracts/NFTandDefiMerged.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTandDefiMerged"
+      ]
+    },
+    "/Users/shaikmohammadshaid/Downloads/my-hardhat-project/contracts/Tweets.sol": {
+      "lastModificationDate": 1724709899233,
+      "contentHash": "32e09c54408de0ef0fce0f1fa869d805",
+      "sourceName": "contracts/Tweets.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Tweets"
+      ]
+    }
+  }
+}

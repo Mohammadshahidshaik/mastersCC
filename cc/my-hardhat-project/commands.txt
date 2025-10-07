@@ -1,0 +1,40 @@
+Continue with the setup: The command you just ran has generated the proving and verifying keys (contained in circuit_0000.zkey).
+npx snarkjs groth16 setup example.r1cs powersOfTau28_hez_final_12.ptau circuit_0000.zkey
+
+
+This command will use the circuit_0000.zkey file to generate a verification_key.json file, which is required for the proof verification process.
+npx snarkjs zkey export verificationkey circuit_0000.zkey verification_key.json
+
+
+Ensure the File Structure is Correct:
+
+Make sure your example.circom and input.json files are in the correct directory:
+example.circom should be in your circuits directory.
+input.json should be in the same directory where you are running your commands, typically your main project directory.
+Compile the Circuit:
+
+You have likely already done this, but just to confirm, you should have already compiled your circuit to generate .r1cs, .wasm, and .sym files.
+Generate the Witness:
+
+Run the following command to generate the witness using snarkjs:
+
+npx snarkjs wtns calculate example.wasm input.json witness.wtns
+
+Delete and Regenerate All Files:
+
+Delete all generated files (example.wasm, example.r1cs, circuit_0000.zkey, witness.wtns, proof.json, public.json).
+
+Generate the Witness: Make sure your input.json file is correctly formatted and located in the same directory. Then run:
+npx snarkjs wtns calculate circuits/example.wasm input.json witness.wtns
+
+Regenerate the .zkey File: Use the following command to generate the .zkey file:
+
+npx snarkjs groth16 setup circuits/example.r1cs powersOfTau28_hez_final_12.ptau circuit_0000.zkey
+
+
+
+Generate the Proof and Public Signals:
+
+Now that you have the witness, the next step is to generate the proof and public signals using the following command:
+
+npx snarkjs groth16 prove circuit_0000.zkey witness.wtns proof.json public.json
